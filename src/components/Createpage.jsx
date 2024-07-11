@@ -33,7 +33,7 @@ function Createpage() {
         e.preventDefault();
         setIsLoading(true)
         try {
-            const url = "https://diary-app-backend-9hht.onrender.com/dairy/add";
+            const url = "https://dairyapp.onrender.com/dairy/add";
             const response = await axios.post(url, data, config);
 
 

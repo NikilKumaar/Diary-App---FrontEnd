@@ -27,7 +27,7 @@ function Editpage() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://diary-app-backend-9hht.onrender.com/dairy/edit/${id}`, config);
+                const response = await axios.get(`https://dairyapp.onrender.com/dairy/edit/${id}`, config);
                 setData(response.data);
             } catch (error) {
                 console.error(error);
@@ -47,7 +47,7 @@ function Editpage() {
         setIsLoading(true)
 
         try {
-            const saveDocoument = await axios.put(`https://diary-app-backend-9hht.onrender.com/dairy/edit/${id}`, data, config);
+            const saveDocoument = await axios.put(`https://dairyapp.onrender.com/dairy/edit/${id}`, data, config);
             // You might want to use a toast library here to show a success message.
             console.log('Document Saved!', saveDocoument.data);
             toast("Document Updated Successfully");

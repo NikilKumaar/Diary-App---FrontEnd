@@ -24,7 +24,7 @@ function View() {
 
   useEffect(() => {
     axios
-      .get('https://diary-app-backend-9hht.onrender.com/dairy/all', config)
+      .get('https://dairyapp.onrender.com/dairy/all', config)
       .then((response) => {
         setRead(response.data);
       })
@@ -35,7 +35,7 @@ function View() {
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://diary-app-backend-9hht.onrender.com/dairy/delete/${id}`, config)
+      .delete(`https://dairyapp.onrender.com/dairy/delete/${id}`, config)
       .then(() => {
         toast.error('Data will be deleted');
         window.location.reload();

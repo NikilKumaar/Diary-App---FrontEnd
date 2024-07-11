@@ -24,7 +24,7 @@ function Signup() {
     e.preventDefault();
     setIsLoading(true)
     try {
-      const url = "https://diary-app-backend-9hht.onrender.com/register";
+      const url = "https://dairyapp.onrender.com/register";
       const { data: res } = await axios.post(url, data);
 
       toast.success("Registeration Successful");

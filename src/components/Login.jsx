@@ -19,7 +19,7 @@ function Login() {
         setIsLoading(true);
 
         try {
-          const url = 'https://diary-app-backend-9hht.onrender.com/login'
+          const url = 'https://dairyapp.onrender.com/login'
           const response = await axios.post(url, data) // Use a different variable name here
     
           localStorage.setItem('token', response.data.token)
@@ -111,9 +111,9 @@ function Login() {
                                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div className="modal-body text-dark">
-                                                    Email-id:arularunoffical1110@gmail.com
+                                                    nikilnike666@gmail.com
                                                     <br />
-                                                    password:12345
+                                                    password:Nikilnike@123
                                                 </div>
                                                 <div className="modal-footer">
                                                     <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>

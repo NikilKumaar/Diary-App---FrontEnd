@@ -16,7 +16,7 @@ function Forgotpassword() {
     setIsLoading(true)
 
     try {
-      const url = `https://diary-app-backend-9hht.onrender.com/forgotpassword`;
+      const url = `https://dairyapp.onrender.com/forgotpassword`;
       const { data } = await axios.post(url, { email });
       toast.success("Email Sent")
     } catch (error) {

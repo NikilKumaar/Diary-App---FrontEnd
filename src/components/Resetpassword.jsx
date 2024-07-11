@@ -16,7 +16,7 @@ function Resetpassword() {
     setIsLoading(true)
 
     try {
-      const url = `https://diary-app-backend-9hht.onrender.com/reset/:token`;
+      const url = `https://dairyapp.onrender.com/reset/:token`;
       const { data } = await axios.post(url, { password });
       toast.success("Password Reset Sucsessful");
       navigate('/login');
